@@ -24,7 +24,7 @@ body{
     border-radius: 4px;
     padding: 8px 12px;
     position: absolute;
-    top: 420px;
+    top: 500px;
 }
 html.dark{ /*เปลี่ยนค่าตัวแปรเดิม จากดำเป็นขาวขาวเป็นดำ*/
     --primary-color:#fff; 
