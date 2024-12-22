@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+:root{ /*ตัวแปรควบคุม เก็บสีแบ่งเป็น Primary และ Secondary*/
+    --primary-color:#000;
+    --secondary-color:#fff;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /*ซ่อนการ Scroll*/
+    margin:0;
+}
+.time{
+    font-size: 60px;
+}
+.toggle{ /*โหมดกลางวัน*/
+    cursor: pointer;
+    background: var(--primary-color); /*สีพื้นหลังปุ่ม (สีดำ)*/
+    color: var(--secondary-color); /*สีข้อความในปุ่ม (สีขาว)*/
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 420px;
+}
+html.dark{ /*เปลี่ยนค่าตัวแปรเดิม จากดำเป็นขาวขาวเป็นดำ*/
+    --primary-color:#fff; 
+    --secondary-color: #333; 
+}
+html.dark{   
+    background: #111; /*สีพื้นหลังสีดำ*/
+    color: var(--primary-color); /*สีข้อความสีขาว*/
+}
+้html{
+    transition: all 0.5s ease-in;
+}
